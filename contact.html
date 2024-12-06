@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Artist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Keyframes for pulsing animation */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Pulsing animation for heading */
+        .contact h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            animation: pulse 2s infinite;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling and hover transition */
+        .contact button {
+            background-color: #ff69b4; /* Pink color */
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .contact button:hover {
+            background-color: #ff1493; /* Darker pink for hover effect */
+        }
+
+        /* Style for form inputs */
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .contact input[type="text"], 
+        .contact input[type="email"], 
+        .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .contact textarea {
+            height: 150px;
+        }
+
+        /* Center the email links */
+        .email-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .email-links a {
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ff69b4;
+        }
+
+        .email-links a:hover {
+            color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <h1>&nbsp; rcarrollanne99@gmaill.com</h1>
+<form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+                
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+                
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+                
+        <button type="submit">Send</button>
+      </form>
+        </section>
+
+        <!-- Centered email links -->
+        <div class="email-links">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a> ★ 
+            <a href="https://outlook.office365.com/mail/?path=/mail&wa=wsignin1.0" target="_blank">Outlook</a> ★ 
+            <a href="https://mail.yahoo.com/" target="_blank">Yahoo</a> ★ 
+            <a href="https://mail.aol.com/" target="_blank">AOL Mail</a> ★ 
+            <a href="https://mail.proton.me/" target="_blank">Proton Mail</a> ★ 
+            <a href="https://www.gmx.com/" target="_blank">GMX Mail</a> ★ 
+            <a href="https://tutanota.com/" target="_blank">Tutanota Mail</a> ★ 
+            <a href="https://www.mail.com/" target="_blank">Mail.com</a> ★ 
+            <a href="https://prod-btemailauth.bt.com/81522fe7-47cf-4713-bdb7-b6f7bfe421a6/b2c_1a_rpbt_signin/oauth2/v2.0/authorize?client_id=bf4e9e5e-0d73-46b3-ad02-06f335bd5105&scope=bf4e9e5e-0d73-46b3-ad02-06f335bd5105%20openid%20profile%20offline_access&redirect_uri=https://email.bt.com/mail/saf/sso.jsp&response_type=code&state=pv53x738hPKdtbqEutv" target="_blank">BT Mail</a> ★ 
+            <a href="https://www.neo.space/" target="_blank">Neo.Space</a> ★ 
+            <a href="https://www.thunderbird.net/en-US/" target="_blank">Thunderbird</a>
+        </div>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Rita Carroll. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

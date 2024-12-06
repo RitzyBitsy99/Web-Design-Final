@@ -1,0 +1,211 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e0e6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+header {
+    background-color: #d081a1;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f2c6d4; /* Hover effect */
+}
+
+main {
+    flex: 1;
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding-bottom: 2rem; /* Prevent overlap with footer */
+}
+
+footer {
+    background-color: #d081a1;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%; /* Ensures footer spans full width */
+    position: relative; 
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-items: center; /* Center images within grid cells */
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 250px; /* Consistent image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth transition effect */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Typography */
+h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack images on small screens */
+    }
+}
+
+/* Custom Cursor */
+* {
+    cursor: url(https://proxy.everskies.com/a/https://cur.cursors-4u.net/others/oth-9/oth800.cur), auto !important;
+}
+
+.w {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F7648E;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-shadow: 1px 1px #00000082;
+    font-size: 18px;
+    display: flex;
+}
+
+.w img {
+    height: 24px;
+    display: block;
+}
+
+.w p {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+/* Blog Styles */
+.blog {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog article {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    color: #d081a1;
+    margin-bottom: 0.5rem;
+}
+
+.blog-content {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.media-section {
+    margin-top: 2rem;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#load-more {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #d081a1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#load-more:hover {
+    background-color: #b66a85;
+}
